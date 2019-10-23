@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="emrec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 03:17:20 &#214;S"/>
+        <attribute name="created" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMjI7MDI6MjA6MjMgw5ZTOzMwMzE="/>
+        <attribute name="edited" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMjI7MDM6MTc6MjAgw5ZTOzI7MzE0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kelime, harf" type="String" array="False" size=""/>
+            <assign variable="kelime" expression="&quot;&quot;"/>
+            <assign variable="harf" expression="&quot;E&quot;"/>
+            <while expression="harf!=&quot;H&quot;">
+                <output expression="&quot;Harf giriniz.&quot;" newline="True"/>
+                <input variable="harf"/>
+                <if expression="Len(harf)&gt;1">
+                    <then>
+                        <output expression="&quot;L&#252;tfen tek karakter giriniz.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="harf==&quot;H&quot;">
+                            <then/>
+                            <else>
+                                <assign variable="kelime" expression="kelime&amp;harf"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Kelimeniz:&quot;&amp;kelime" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

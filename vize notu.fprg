@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="90530"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-04 09:49:44 &#214;S"/>
+        <attribute name="created" value="OTA1MzA7TEFQVE9QLU1JOEdPNlYxOzIwMTktMTAtMDQ7MDk6Mzg6MDAgw5ZTOzI3MzI="/>
+        <attribute name="edited" value="OTA1MzA7TEFQVE9QLU1JOEdPNlYxOzIwMTktMTAtMDQ7MDk6NDk6NDQgw5ZTOzE7Mjg1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final" type="Integer" array="False" size=""/>
+            <declare name="ort" type="Real" array="False" size=""/>
+            <output expression="&quot;vize notunu yaz&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;final notunu yaz&#305;n&#305;z&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ort" expression="vize*0.4+final*0.6"/>
+            <output expression="&quot;Not ortalaman&#305;z&quot;&amp;ort" newline="True"/>
+            <if expression="(ort&gt;=60)">
+                <then>
+                    <output expression="&quot;ge&#231;ti&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(ort&lt;50)">
+                        <then>
+                            <output expression="&quot;kald&#305;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ge&#231;ti&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

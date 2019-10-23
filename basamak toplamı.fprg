@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="emrec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-15 07:21:24 &#214;S"/>
+        <attribute name="created" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMTU7MDc6MTc6MDUgw5ZTOzMwNDQ="/>
+        <attribute name="edited" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMTU7MDc6MjE6MjQgw5ZTOzE7MzE0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yuzler, onlar, birler, sayi" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="yuzler" expression="sayi/100"/>
+            <assign variable="onlar" expression="(sayi/10)%10"/>
+            <assign variable="birler" expression="sayi%10"/>
+            <output expression="&quot;toplam &quot;&amp;yuzler+onlar+birler" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

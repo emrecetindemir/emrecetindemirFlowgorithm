@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="emrec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-08 06:28:45 &#214;S"/>
+        <attribute name="created" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMDg7MDY6MjE6Mzcgw5ZTOzMwNDU="/>
+        <attribute name="edited" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMDg7MDY6Mjg6NDUgw5ZTOzE7MzE1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rastgele, tahmin, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="rastgele" expression="random(100)"/>
+            <assign variable="tahmin" expression="0"/>
+            <output expression="&quot;Tahmin giriniz.&quot;" newline="True"/>
+            <do expression="tahmin!=rastgele">
+                <input variable="tahmin"/>
+                <if expression="tahmin != rastgele">
+                    <then>
+                        <if expression="tahmin &gt; rastgele">
+                            <then>
+                                <output expression="&quot;Tahmininizden daha k&#252;&#231;&#252;k bir say&#305; giriniz.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Tahmininizden daha b&#252;y&#252;k bir say&#305; giriniz.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+            <output expression="&quot;Tebrikler! &quot;&amp;rastgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;sayac&amp;&quot; seferde bildiniz.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

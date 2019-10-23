@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="emrec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-06 12:18:13 &#214;S"/>
+        <attribute name="created" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMDY7MTI6MTI6MTUgw5ZTOzMwMzY="/>
+        <attribute name="edited" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMDY7MTI6MTg6MTMgw5ZTOzE7MzE0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saatlikucret" type="Integer" array="False" size=""/>
+            <output expression="&quot;Saatlik &#252;cretinizi giriniz.&quot;" newline="True"/>
+            <input variable="saatlikucret"/>
+            <declare name="haftaliksaat" type="Integer" array="False" size=""/>
+            <output expression="&quot;Haftada ka&#231; saat &#231;al&#305;&#351;t&#305;&#287;&#305;n&#305;z&#305; giriniz.&quot;" newline="True"/>
+            <input variable="haftaliksaat"/>
+            <declare name="haftalikkazanc" type="Integer" array="False" size=""/>
+            <assign variable="haftalikkazanc" expression="saatlikucret*haftaliksaat"/>
+            <declare name="aylikkazanc" type="Integer" array="False" size=""/>
+            <assign variable="aylikkazanc" expression="haftalikkazanc*4"/>
+            <output expression="&quot;Ayl&#305;k kazanc&#305;n&#305;z =&quot; &amp; aylikkazanc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="emrec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-26 12:00:02 &#214;S"/>
+        <attribute name="created" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMDktMjY7MTE6NDg6MzEgw5bDljszMTgz"/>
+        <attribute name="edited" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMDktMjY7MTI6MDA6MDIgw5ZTOzE7MzE0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sayi1" type="Integer" array="False" size=""/>
+            <input variable="Sayi1"/>
+            <if expression="Sayi1 &gt; -1">
+                <then>
+                    <if expression="Sayi1 % 2 = 0">
+                        <then>
+                            <declare name="&#231;ift" type="String" array="False" size=""/>
+                            <assign variable="&#231;ift" expression="&quot;girilen say&#305; &#231;ift&quot;"/>
+                            <output expression="&#231;ift" newline="True"/>
+                        </then>
+                        <else>
+                            <declare name="tek" type="String" array="False" size=""/>
+                            <assign variable="tek" expression="&quot;girilen sayi tek&quot;"/>
+                            <output expression="tek" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <declare name="negatif" type="String" array="False" size=""/>
+                    <assign variable="negatif" expression="&quot;girilen sayi negatif&quot;"/>
+                    <output expression="negatif" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

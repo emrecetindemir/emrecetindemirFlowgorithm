@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="emrec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-05 11:22:39 &#214;&#214;"/>
+        <attribute name="created" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMDU7MTE6MTc6NDUgw5bDljszMTcz"/>
+        <attribute name="edited" value="ZW1yZWM7TEFQVE9QLU5WREpVNjlWOzIwMTktMTAtMDU7MTE6MjI6Mzkgw5bDljsxOzMyODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1" type="Integer" array="False" size=""/>
+            <declare name="sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz.&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <declare name="toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="sayi1+sayi2"/>
+            <output expression="&quot;Sonu&#231;=&quot; &amp; toplam" newline="True"/>
+            <declare name="kare" type="Integer" array="False" size=""/>
+            <assign variable="kare" expression="toplam*toplam"/>
+            <output expression="&quot;Toplam&#305;n karesi=&quot; &amp; kare" newline="True"/>
+            <declare name="kup" type="Integer" array="False" size=""/>
+            <assign variable="kup" expression="kare*toplam"/>
+            <output expression="&quot;K&#252;p&#252;=&quot; &amp; kup" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
